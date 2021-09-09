@@ -102,9 +102,10 @@ body {
 
 /*HEADER*/
 header {
+    align-items: center;
     position: relative;
     display: block;
-    height: 100vh;
+    height: 90rem;
     background-image: url("hero-image.jpg");
     background-position: center;
     background-size: cover;
@@ -114,7 +115,7 @@ header {
 @media screen and (max-width: 992px) {
     header {
         position: relative;
-        height: 100vh;
+        height: 90rem;
         background-image: url("hero-image.jpg");
         background-position: 55% 60%;
         background-size: cover;
