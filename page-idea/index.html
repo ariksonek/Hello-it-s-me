@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8dcc89b3a0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true
+        });
+    </script>
+    <title>Pomysł na strone</title>
+</head>
+<body>
+    <header id="home">
+
+        <!-- Navigation-->
+        <header id="home">
+
+            <!--NAVIGATION-->
+            <div class="container-fluid fixed-top navigation">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#home" onclick="closeNav()">Home</a>
+                        <a href="#aboutus" onclick="closeNav()">Ten Projekt</a>
+                        <a href="#offer" onclick="closeNav()">Gotowa Strona</a>
+                        <a href="#contact" onclick="closeNav()">Kontakt</a>
+                    </div>
+                </div>
+    
+                <div class="container text-light menu-button">
+                    <span onclick="openNav()">menu</span>
+                </div>
+            </div>
+    
+    
+    
+            <!--END NAVIGATION-->
+            <div class="hero-shadow"></div>
+            <div class="container d-flex">
+                <div class="header-text">
+                    <h1><p>Cześć, jestem Arek.</p></h1>
+                    <p>Chcę zrobić dla Ciebie stronę :)</p>
+                     
+                </div>
+            </div>
+            <div class="container button-header"><p><a href="#aboutus">Sprawdź co potrafię!</a></p> </div>
+     <!-- end landing text-->
+        <!--socials-->
+        <div class="socials-menu container-fluid">
+            <div class="label">kliknij mnie</div>
+            <div class="spacer"></div>
+            <div class="item"><span>Twitter</span></div>
+            <div class="item"><span>Instagram</span></div>
+            <div class="item"><span>Facebook</span></div>
+            <div class="item"><span>Gmail</span></div>
+            <div class="item"><span>Cokolwiek</span></div>
+          </div>
+        <!--end socials-->
+        </header>
+        
+
+     <!--about-->
+
+        <section id="aboutus" class="scroll-fix">
+            <div class="title"><h1>TEN PROJEKT</h1></div>
+
+            <div class="container about-us">
+                <article class="about-text">
+                    <p>to jest strona pokazująca przykładowe rozwiązania, </p>
+                    <p>które mogą się znaleźć na twojej stronie</p>
+                    <br>
+                    <p>podejdź do niej jak do "menu" w restauracji</p>
+                    <br>
+                    <p>np. efekt odsłaniającego się tekstu</p>
+                    <br>
+                    <p>poza tym co zobaczysz tutaj najbardziej liczysz sie ty i:</p>
+                    <p>to czego sam/sama oczekujesz, </p>
+                    <p>twoje inspiracje z innych źródeł, </p>
+                    <p>ogólna twoja wizja.</p>
+                    <br>
+                    <p>po twojej stronie będą rzeczy takie jak opisy czy określenie liczby podstron (np. nasze produkty)</p>
+                    <p>ja chętnie pomogę i podzielę się pomysłami</p>
+                    <br>
+                    <p>stronę będziemy tworzyć razem na bieżąco</p>
+                </article>
+            </div>
+        </section>
+     <!--end about-->
+
+     <!--expectations-->
+        <section id="offer">
+            <div class="title"><h1>PRZYKŁAD</h1></div>
+
+           <div class="container link-page">
+             <h3>Aby zobaczyc przykładową stronę, kliknij w ten link: </h3>
+             <p><a href="example-page/index.html">przykład</a></p>
+           </div>
+        </section>
+     <!--end expectations-->
+
+     <!--contact-->
+        <section id="contact">
+          <div class="title"><h1>KONTAKT</h1></div>
+
+          <div class="container contact">
+            <p>Jeżeli jesteś zainteresowany/zainteresowana to kontakt do mnie:</p>
+            <br>
+            <i class="fas fa-mobile-alt"></i> 788 432 424
+            <br>
+            <i class="fas fa-paper-plane"></i> ariksonek@gmail.com
+          </div>
+
+        </section>
+     <!--end contact-->
+
+
+     <footer class="bg-dark text-light border-top foot">
+      <p class="text-center m-0">&copy; Arkadiusz Dąbrowski Copyright 2021</p>
+    </footer>
+
+
+    <!--menu function-->
+    <script>
+        function openNav() {
+            if (x.matches) {
+                document.getElementById("myNav").style.width = "100%";
+                
+            } else {
+                document.getElementById("myNav").style.width = "50%";
+            } if (y.matches) {
+                document.getElementById("myNav").style.width = "20%";
+            }
+
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        var y = window.matchMedia("(min-width: 1200px)")
+        var x = window.matchMedia("(max-width: 768px)")
+        openNav(x, y)
+        closeNav(x, y)
+        x.addEventListener(openNav, closeNav)
+        y.addEventListener(openNav, closeNav)
+
+        
+
+    </script>
+    <!--end menu function-->
+
+    <!--scroll text effect-->
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.reveal');
+
+        ScrollReveal().reveal('.about-text p', {
+            easing: 'cubic-bezier(0.25, 0.1, 0.1, 1)',
+            duration: 3000,
+            reset: false,
+            delay: 300
+        });
+    </script>
+    <!--end scroll efect-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
