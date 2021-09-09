@@ -125,12 +125,16 @@ header {
 
 .header-text {
     font-size: 4rem;
-    width: 25rem;
-    height: 40rem;
     margin-top: 10rem;
     margin-left: 2rem;
     color: rgba(192, 103, 30, 0.747);
     font-weight: bold;
+}
+@media screen and (max-width: 786px) {
+ 
+  .button-header {
+    margin-top: 10rem;
+  }
 }
 
 
@@ -369,6 +373,8 @@ span {
     line-height: 10rem;
   }
 }
+
+
 /*end aboutus*/
 
 /*offer*/
@@ -419,9 +425,15 @@ span {
 
 
 /*end contact*/
-
-.foot p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+.foot span {
+  font-family: 'Allison', cursive;
+  font-size: 5rem;
   margin: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .foot span {
+    font-size: 7rem;
+  }
 }
