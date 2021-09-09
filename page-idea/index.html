@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8dcc89b3a0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -41,15 +44,19 @@
                 </div>
             </div>
     
+    
+    
             <!--END NAVIGATION-->
-          <div class="hero-shadow"></div>
+            <div class="hero-shadow"></div>
             <div class="container d-flex flex-column">
                 <div class="container header-text">
                     <h1><p>Cześć, jestem Arek.</p></h1>
                     <p>Chcę zrobić dla Ciebie stronę :)</p>
+                   
                 </div>
-                <div class="container button-header"><p><a href="#aboutus">Sprawdź co potrafię!</a></p> </div>
+                
             </div>
+            <div class="container button-header"><p><a href="#aboutus">Sprawdź co potrafię!</a></p> </div>
      <!-- end landing text-->
         <!--socials-->
         <div class="socials-menu container-fluid">
@@ -74,19 +81,21 @@
                 <article class="about-text">
                     <p>to jest strona pokazująca przykładowe rozwiązania, </p>
                     <p>które mogą się znaleźć na twojej stronie</p>
+                    <p>podejdź do niej jak do "menu" w restauracji </p>
+                    <p> np. efekt odsłaniającego się tekstu</p>
                     <br>
-                    <p>podejdź do niej jak do "menu" w restauracji</p>
                     <br>
-                    <p>np. efekt odsłaniającego się tekstu</p>
-                    <br>
-                    <p>poza tym co zobaczysz tutaj najbardziej liczysz sie ty i:</p>
-                    <p>to czego sam/sama oczekujesz, </p>
-                    <p>twoje inspiracje z innych źródeł, </p>
-                    <p>ogólna twoja wizja.</p>
-                    <br>
-                    <p>po twojej stronie będą rzeczy takie jak opisy czy określenie liczby podstron (np. nasze produkty)</p>
+                    <p>poza tym co zobaczysz tutaj liczą się:</p>
+                    
+                     <ul>
+                         <li>to czego sam/sama oczekujesz, </li>
+                         <li>twoje inspiracje z innych źródeł, </li>
+                         <li>ogólna twoja wizja.</li>
+                         <br>
+                     </ul>
+                    
+                    <p>będę potrzebować takich rzeczy jak opisy czy określenie liczby podstron (np. nasze produkty)</p>
                     <p>ja chętnie pomogę i podzielę się pomysłami</p>
-                    <br>
                     <p>stronę będziemy tworzyć razem na bieżąco</p>
                 </article>
             </div>
@@ -111,9 +120,9 @@
           <div class="container contact">
             <p>Jeżeli jesteś zainteresowany/zainteresowana to kontakt do mnie:</p>
             <br>
-            <i class="fas fa-mobile-alt"></i> 788 432 424
+            <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;788 432 424
             <br>
-            <i class="fas fa-paper-plane"></i> ariksonek@gmail.com
+            <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;ariksonek@gmail.com
           </div>
 
         </section>
@@ -121,7 +130,7 @@
 
 
      <footer class="bg-dark text-light border-top foot">
-      <p class="text-center m-0">&copy; Arkadiusz Dąbrowski Copyright 2021</p>
+      <p class="text-center m-0"><span>&copy; Arkadiusz Dąbrowski</span></p>
     </footer>
 
 
@@ -160,12 +169,21 @@
         window.sr = ScrollReveal();
         sr.reveal('.reveal');
 
-        ScrollReveal().reveal('.about-text p', {
+        ScrollReveal().reveal('.about-text p',{
             easing: 'cubic-bezier(0.25, 0.1, 0.1, 1)',
             duration: 3000,
             reset: false,
             delay: 300
-        });
+        })
+        ScrollReveal().reveal('.about-text ul',{
+            easing: 'cubic-bezier(0.25, 0.1, 0.1, 1)',
+            duration: 3000,
+            reset: false,
+            delay: 300
+        })
+        
+        
+        ;
     </script>
     <!--end scroll efect-->
 
