@@ -497,13 +497,14 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous" async>
   </script>
   <script>
-    $(document).click(function (event) {
-      var clickover = $(event.target);
-      var _opened = $(".navbar-collapse").hasClass("show");
-      if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-        $(".navbar-toggler").click();
-      }
-    });
+    
+     $(document).click(function (event) {
+          var clickover = $(event.target);
+          var _opened = $(".navbar-collapse").hasClass("show");
+          if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+          }
+      });
 
  
   </script>
