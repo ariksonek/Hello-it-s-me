@@ -21,6 +21,11 @@ body {
     background-size: cover;
 }
 
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .scroll-fix::before {
     display: block;
     margin-top: -3rem;
