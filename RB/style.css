@@ -364,6 +364,9 @@ header {
     }
 }
 
+.description span {
+    font-weight: 700!important;
+}
 
 /*end about us*/
 
@@ -425,15 +428,19 @@ table {
 
 
 
-/*products*
+/*products*/
+
+/*contact*/
+
+
+/* end contact*/
 
 /*footer*/
 
-footer,
 footer p,
 footer a {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: .1rem;
     text-decoration: none !important;
@@ -445,10 +452,18 @@ footer a:hover {
     color: white;
 }
 
+@media only screen and (min-width: 768px) {
+    footer p,
+    footer a {
+        font-size: 2rem;
+        letter-spacing: .1rem;
+    }
+  
+}
+
 /*end footer*/
 
 /*hovers*/
-
 .hvr-underline {
     display: inline-block;
     vertical-align: middle;
@@ -484,8 +499,12 @@ footer a:hover {
     right: 0;
 }
 
-
-
-
+@media only screen and (max-width: 992px) {
+    .hvr-underline:hover:before,
+    .hvr-underline:focus:before,
+    .hvr-underline:active:before {
+    display: none;
+}
+}
 /*hovers*/
 
