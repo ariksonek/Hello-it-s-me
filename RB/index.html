@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/8dcc89b3a0.js" crossorigin="anonymous" async></script>
   <title>Kołki drewniane, trociny- Ryszard Bigus</title>
- 
+
 </head>
 
 <body id="home" data-spy="scroll" data-target="#navbar-example">
@@ -32,7 +32,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active hvr-underline" aria-current="page" href="#home"><i class="fas fa-home"></i>&nbsp;Home</a>
+          <a class="nav-link active hvr-underline" aria-current="page" href="#home"><i
+              class="fas fa-home"></i>&nbsp;Home</a>
           <a class="nav-link hvr-underline" href="#aboutus"><i class="fas fa-user"></i>&nbsp;O nas</a>
           <a class="nav-link hvr-underline" href="#products"><i class="fas fa-box-open"></i>&nbsp;Produkty</a>
           <a class="nav-link hvr-underline" href="#contact"><i class="fas fa-paper-plane"></i>&nbsp;Kontakt</a>
@@ -47,7 +48,8 @@
 
   <header>
 
-    <div class="container-fluid header-text d-flex flex-column align-items-center justify-content-center text-light text-center">
+    <div
+      class="container-fluid header-text d-flex flex-column align-items-center justify-content-center text-light text-center">
       <p>Kołki Drewniane-</br>Ryszard Bigus</p>
       <p class="text-p">Producent kołków meblowych wysokiej jakości od 1990 r.</p>
       <a href="#aboutus" class="btn btn-outline-light">poznaj nas</a>
@@ -100,7 +102,7 @@
           <p class="lead description">Wieloletnia, ugruntowana pozycja na rynku jest świadectwem niezmiennej, wysokiej
             jakości
             oferowanych przez nas artykułów. Oferujemy Państwu solidne i profesjonalne wykonanie kołków drewnianych na
-            potrzeby przemysłu meblarskiego.
+            potrzeby przemysłu meblarskiego z dokladnością do <span>0.10mm</span>!
 
           </p>
           <hr class="my-4">
@@ -189,7 +191,9 @@
           <p> Zdajemy sobie sprawę, że drążki oraz kołki muszą wytrzymać bardzo duże obciążenie. Przekłada się to bowiem
             na trwałość gotowego mebla oraz bezpieczeństwo użytkowników. Wąska specjalizacja pozwala nam skupić się na
             każdym szczególe procesu produkcyjnego. Naszym priorytetem jest zatem wybór najlepszej jakości drewna.
-            Wszystkie wykonane przez naszą firmę kołki posiadają Certyfikat FSC® 100%.</p>
+            Wszystkie wykonane przez naszą firmę kołki posiadają Certyfikat FSC® 100% oraz przechodzą <strong>dokładną
+              kontrolę
+              jakości</strong>. Mamy zatem pewność, że Klienci otrzymują przedmioty z najwyższej półki.</p>
         </div>
         <div class="container container-table p-0 d-flex flex-column justify-content-center ">
           <table class="fl-table">
@@ -452,7 +456,10 @@
             poczty elektronicznej.</p>
           </p>
           <hr class="my-4">
-          <p>
+
+          <div class="container d-flex flex-column justify-content-between flex-md-row">
+
+            <p>
               Zakład Produkcyjno-Handlowy<br>
               Ryszard Bigus<br>
               ul. Kartuska 60<br>
@@ -460,12 +467,14 @@
               Godziny otwarcia:<br>
               Pon-Pt 7-15<br><br>
               tel.: 668-674-137<br>
-                e-mail: <a href="mailto:zphryszardbigus@wp.pl">zphryszardbigus@wp.pl</a>
-              
+              e-mail: <a href="mailto:zphryszardbigus@wp.pl">zphryszardbigus@wp.pl</a>
 
-             
-          </p>
-        
+            </p>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9333.047593660685!2d17.6937642!3d54.210852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d6ed5c82990d8dc!2sZak%C5%82ad%20Produkcyjno-Handlowy%20Ryszard%20Bigus!5e0!3m2!1spl!2spl!4v1636377782807!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          </div>
+
         </div>
       </div>
 
@@ -474,7 +483,7 @@
 
   </section>
 
-  <!--end contact--> 
+  <!--end contact-->
 
 
   </div>
@@ -482,9 +491,9 @@
   <!--footer-->
 
   <footer class="text-light">
-    <p class="text-center py-4 m-0">Zakład Produkcyjno-Handlowy Ryszard Bigus
+    <p class="text-center p-4 m-0">Zakład Produkcyjno-Handlowy Ryszard Bigus
       ul. Kartuska 60, 77-124 Parchowo, tel. 668 674 137</p>
-      <p class="text-center m-0"><a href="private.html" target="_blank">Polityka prywatności</a></p>
+    <p class="text-center p-2 m-0"><a href="private.html" target="_blank">Polityka prywatności</a></p>
   </footer>
 
   <!--end footer-->
@@ -496,20 +505,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous" async>
   </script>
-  <script>
-    
-     $(document).click(function (event) {
-          var clickover = $(event.target);
-          var _opened = $(".navbar-collapse").hasClass("show");
-          if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-            $(".navbar-toggler").click();
-          }
-      });
-
  
+ <script>
+    $(document).click(function (event) {
+      var clickover = $(event.target);
+      var _opened = $(".navbar-collapse").hasClass("show");
+      if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+        $(".navbar-toggler").click();
+      }
+    });
   </script>
 
 
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script src="cookiescript.js">
+
+</script>
 
 </html>
